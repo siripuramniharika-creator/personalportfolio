@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>Siripuram Niharika — Personal Portfolio</title>
+ <meta name="description" content="Personal portfolio for Your Name — developer, 
+designer, creator." />
+ <!-- Google Font -->
+ <link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=
+swap" rel="stylesheet">
+ <style>
+ :root{
+ --bg: #0f1724;
+ --card: #0b1220;
+ --muted: #94a3b8;
+ --accent: #06b6d4; /* cyan */
+ --glass: rgba(255,255,255,0.03);
+ --radius: 12px;
+ --max-width: 1000px;
+ color-scheme: dark;
+ }
+ *{box-sizing:border-box}
+ html,body{height:100%}
+ body{
+ margin:0;
+ font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 
+Arial;
+ background: linear-gradient(180deg,#071025 0%, #071428 60%);
+ color:#e6eef6;
+ -webkit-font-smoothing:antialiased;
+ -moz-osx-font-smoothing:grayscale;
+ line-height:1.5;
+ padding:24px 16px;
+ display:flex;
+ justify-content:center;
+ }
+ .container{
+ width:100%;
+ max-width:var(--max-width);
+ }
+ header{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:16px;
+ margin-bottom:28px;
+ }
+ .brand{
+ display:flex;align-items:center;gap:12px;
+ }
+ .logo{
+ width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#0ea5a4,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021018;font-size:18px;box-shadow:0 6px 18px rgba(6,182,212,0.08);
+ }
+ nav a{
+ color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600;font-size:14px
+ }
+ nav a:hover{color:var(--accent)}
+ .hero{
+ display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center;margin-bottom:28px;
+ }
+ .card{
+ background:linear-gradient(180deg, rgba(255,255,255,0.02), 
+rgba(255,255,255,0.01));
+ border-radius:var(--radius);
+ padding:22px;
+ box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+ border:1px solid rgba(255,255,255,0.03);
+ }
+ .hero-left h1{margin:0 0 8px 0;font-size:28px}
+ .hero-left p{margin:0;color:var(--muted)}
+ .cta-row{margin-top:18px;display:flex;gap:10px;align-items:center}
+ btn{
+ background:linear-gradient(90deg,var(--accent),#7c3aed);
+ padding:10px 14px;border-radius:10px;color:#001219;font-weight:700;text-decoration:none;font-size:14px;display:inline-block
+ }
+ .btn.secondary{background:transparent;color:var(--muted);border:1px solid 
+rgba(255,255,255,0.04)}
+ /* Profile card */
+ .profile{
+ text-align:center;
+ padding-top:14px;
+ }
+ .avatar{
+ width:120px;height:120px;border-radius:18px;margin:0 auto 12px;display:inline-grid;place-items:center;background:linear-gradient(135deg,#0ea5a4,#7c3aed);font-weight:800;color:#001219;font-size:36px;box-shadow:0 10px 30px rgba(0,0,0,0.6);
+ }
+ .profile h3{margin:6px 0 4px}
+ .profile p{margin:0;color:var(--muted);font-size:14px}
+ /* Sections */
+ section{margin-bottom:20px}
+ h2{margin:0 0 12px 0;font-size:18px}
+ .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+ .project{
+ padding:14px;border-radius:12px;background:var(--glass);border:1px solid 
+rgba(255,255,255,0.02)
+ }
+ .project h3{margin:0 0 6px}
+ .project p{margin:0;color:var(--muted);font-size:14px}
+ .skills{display:flex;gap:10px;flex-wrap:wrap}
+ .skill{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:999px;font-weight:600;font-size:13px;color:var(--muted)}
+ .contact-form{display:flex;flex-direction:column;gap:10px}
+ .contact-form input,.contact-form textarea{background:transparent;border:1px solid 
+rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:inherit}
+ .contact-row{display:flex;gap:10px}
+ footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+ /* Responsive */
+ @media (max-width:880px){
+ .hero{grid-template-columns:1fr}
+ .grid-2{grid-template-columns:1fr}
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <header>
+ <div class="brand">
+ <div class="logo">SN</div>
+ <div>
+ <div style="font-weight:700">Siripuram Niharika</div>
+ <div style="font-size:12px;color:var(--muted)">Developer • Designer • 
+Creator</div>
+ </div>
+ </div>
+ <nav>
+ <a href="#about">About</a>
+ <a href="#projects">Projects</a>
+ <a href="#contact">Contact</a>
+ </nav>
+ </header>
+ <main>
+ <section class="hero">
+ <div class="card hero-left">
+ <h1>Hi — I'm Siripuram Niharika.</h1>
+ <p>I build user-friendly web apps, design clean interfaces, and turn ideas into 
+reality. I focus on JavaScript, accessibility and simple, maintainable code.</p>
+ <div class="cta-row">
+ <a class="btn" href="#contact">Hire me</a>
+ <a class="btn secondary" href="#projects">See projects</a>
+ </div>
+ <div style="margin-top:18px">
+ <h2 style="font-size:15px;margin-bottom:8px">Quick facts</h2>
+ <div style="display:flex;gap:12px;flex-wrap:wrap">
+ <div style="background:var(--card);padding:10px;border-radius:10px;min-width:110px">• Location: Hyderabad</div>
+ <div style="background:var(--card);padding:10px;border-radius:10px;min-width:110px">• Availability: Open to work</div>
+ <div style="background:var(--card);padding:10px;border-radius:10px;min-width:110px">• Email: siripuramniharika@gmail.com</div>
+ </div>
+ </div>
+ </div>
+ <aside class="card profile">
+ <div class="avatar">SN</div>
+ <h3>Siripuram Niharika</h3>
+ <p>Full Stack Developer</p>
+ <div style="margin-top:10px;display:flex;justify-content:center;gap:8px">
+ <a class="btn" href="#contact" style="padding:8px 10px;font-size:13px">Contact</a>
+ <a class="btn secondary" href="https://drive.google.com/file/d/1KVVlpV-tdJIbNlPBkFB_XyD7nmgibBxO/view?usp=drivesdk" target="blank" style="padding:8px 10px;font-size:13px">Resume</a>
+ </div>
+ </aside>
+ </section>
+ <section id="about" class="card">
+ <h2>About</h2>
+ <p style="color:var(--muted)">I am an MCA student with a strong interest in Full Stack Development and software engineering. I am passionate about building clean, scalable, and user-friendly web applications. Through my academic projects and continuous learning, I have gained hands-on experience with technologies such as HTML, CSS, JavaScript, TypeScript, React, Angular, Python, Java, C, C++, DBMS, MySQL, and PostgreSQL.
+ I enjoy transforming ideas into functional applications and solving real-world problems through efficient and maintainable code. My areas of interest include web development, database management, and developing responsive user interfaces that enhance user experience.
+ As a student, I am constantly exploring new technologies, improving my programming and problem-solving skills, and working on projects that strengthen my development knowledge. I am eager to apply my skills in real-world projects, collaborate with teams, and grow as a software developer.</p>
+ </section>
+ <section id="projects">
+ <h2 style="margin-bottom:12px">Projects</h2>
+ <div class="grid-2">
+ <article class="project card">
+ <h3>Web-Based Calculator</h3>
+ <p>Developed a responsive web-based calculator using Angular, HTML, CSS, and JavaScript that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. The application provides an interactive and user-friendly interface for real-time calculations. This project helped strengthen my understanding of Angular concepts including components, event handling, and data binding, while also improving my frontend development and UI design skills.</p>
+ </article>
+ <article class="project card">
+ <h3>Online Leave Management System</h3>
+ <p>The Online Leave Management System is a web-based application designed to automate and streamline the leave request process within an organization. The system allows employees to apply for leave, track leave status, and view leave history, while administrators can approve or reject requests and manage employee records. Developed using modern web technologies with a database-backed architecture, this project highlights my skills in full-stack development, database design, CRUD operations, and role-based access control, ensuring efficiency, accuracy, and transparency in leave management.</p>
+ </article>
+  <article class="project card">
+ <h3>Trading Bot (Python)</h3>
+ <p>This project is an automated trading bot designed to execute stock or cryptocurrency trades based on predefined strategies. It fetches live market data, analyzes trends, and places buy or sell orders automatically, enabling hands-free trading. Built using Python, the project utilizes APIs and data analysis libraries such as Pandas and NumPy to make real-time decisions, demonstrating practical applications of algorithmic trading and automation.</p>
+ </article>
+ <article class="project card">
+ <h3>Rock Paper Scissors (Python)</h3>
+ <p>A classic interactive game implemented in Python, allowing users to play against the computer. The game accepts user input, generates computer moves, determines the winner, and tracks scores. It leverages Python’s random module to create unpredictable computer choices, highlighting logical programming skills and user interaction handling in a simple yet effective way.</p>
+ </article>
+ <article class="project card">
+ <h3>Number Guessing Game (Java)</h3>
+ <p>This Java-based console application challenges users to guess a randomly generated number. It provides feedback on each guess, handles invalid inputs, and loops until the correct number is guessed. The project demonstrates fundamental Java concepts including control structures, user input handling, and console-based application development, making it a solid example of basic programming proficiency.</p>
+ </article>
+ <article class="project card">
+ <h3>Student Management System (Java)</h3>
+ <p>A comprehensive Java application designed to manage student data efficiently. It allows adding, updating, deleting, and viewing student records, demonstrating CRUD (Create, Read, Update, Delete) operations. The project uses ArrayLists for dynamic data storage and emphasizes core Java concepts such as object-oriented programming, data structures, and file handling, showcasing practical skills in building real-world management systems.</p>
+ </article>
+ </div>
+ </section>
+ <section id="skills" class="card">
+ <h2>Skills</h2>
+ <div class="skills">
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">Angular</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">FastAPI</span>
+    <span class="skill">Python</span>
+    <span class="skill">Java</span>
+    <span class="skill">C++</span>
+    <span class="skill">C Programming</span>
+    <span class="skill">DBMS</span>
+    <span class="skill">MySQL</span>
+    <span class="skill">PostgreSQL</span>
+ </div>
+ </section>
+ <section id="contact" class="card">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:siripuramniharika@gmail.com" style="color:var(--accent)">siripuramniharika@gmail.com</a></p>
+  <p>Phone: <a href="tel:+917569981613" style="color:var(--accent)">+91 7569981613</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/siripuram-niharika-59b817253" target="_blank" style="color:var(--accent)">linkedin.com/in/niharika</a></p>
+  <p>GitHub: <a href="https://github.com/siripuramniharika-creator" target="_blank" style="color:var(--accent)">github.com/siripuramniharika</a></p>
+</section>
+ </main>
+ <footer>
+ © <span id="year"></span> Siripuram Niharika •<span style="color:var(--
+muted)"></span>
+ </footer>
+ </div>
+ <script>
+ // Auto update year
+ document.getElementById('year').textContent = new Date().getFullYear();
+ </script>
+</body>
+</html>
